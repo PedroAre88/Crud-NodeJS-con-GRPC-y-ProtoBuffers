@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Read {
+  rpc GetProduct(ProductId) returns (Product) {}
+}
+
+message ProductId {
+  int32 id = 1;
+}
+
+message Product {
+  int32 id = 1;
+  string descrip = 2;
+}

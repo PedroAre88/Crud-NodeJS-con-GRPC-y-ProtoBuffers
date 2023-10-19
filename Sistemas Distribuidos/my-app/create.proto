@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+service Create {
+  rpc CreateProduct(Product) returns (Product) {}
+}
+
+message Product {
+  int32 id = 1;
+  string descrip = 2;
+}

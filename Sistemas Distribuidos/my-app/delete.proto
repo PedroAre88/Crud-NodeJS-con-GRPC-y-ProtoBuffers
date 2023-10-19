@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+service Delete {
+  rpc DeleteProduct(ProductId) returns (ProductId) {}
+}
+
+message ProductId {
+  int32 id = 1;
+}
